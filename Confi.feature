@@ -8,7 +8,7 @@ Para depois inserir no carrinho
 
 Cenário: Seleções de cor, tamanho e quantidade valida
 Dado que o cliente acesse a EBAC SHOP
-Quando selecionar cor, tamanho e quantidade
+Quando selecionar cor "verde", tamanho "M" e quantidade "2"
 E clicar em "adicionar ao carrinho"
 Então o produto deve ser adicionado ao carrinho de compras
 
@@ -30,22 +30,20 @@ Quando selecionar um produto
 E a quantidade for maior que 10 produtos 
 Então devera exibir uma mensagem de "limite de apenas 10 produtos por venda"
 
-Cenário: Botão “limpar” deve voltar ao estado original
+Cenário: Botão limpar deve voltar ao estado original
 Dado que o cliente acesse a EBAC SHOP
 Quando preencher todas as configurações de cor, tamanho e quantidade
-E clicar no botão "limpar" 
-Então as "opções devem voltar ao normal"
+E clicar no botão limpar
+Então as opções devem voltar ao normal
 
-Esquema do Cenário: configurar múltiplos produtos
-Quando o cliente <seleciona> "cor", "tamanho" ou "quantidade"
-E <clicar> em "adicionar ao carrinho" 
-Então deve ser exibida uma <mensagem> de "sucesso"
+Esquema do Cenário: configurar produtos
+Quando o cliente selecionar <cor> <tamanho> <quantidade>
+E clicar em adicionar ao carrinho e compras
+Então deve ser exibida uma <mensagem>
 
 Exemplos: 
-|selecionar|clicar|mensagem|
-|"cor"|"adicionar ao carrinho"|"sucesso"|
-|"tamanho"|"adicionar ao carrinho"|"sucesso"|
-|"quantidade"|"adicionar ao carrinho"|"limite de apenas 10 produtos por venda"|
+|cor|tamanho|quantidade|mensagem|
+|"vermelha"|"M"|"2"|sucesso"|
 
 
 

@@ -23,10 +23,10 @@ Quando o cliente não preencher os campos de cadastro
 E cliclar em "finalizar compra"
 Então deve exibir uma mensagem de "alerta"
 
-Esquema do Cenário: autenticar usuarios
+Esquema do Cenário: validar cadastro do cliente
 Quando o cliente digitar o <usuário> 
-E <clicar> "finalizar compra"
-Então deve exibir a <mensagem> "alerta"
+E <clicar>
+Então deve exibir a <mensagem> 
 
 Exemplos: 
 |usuário|clicar|mensagem|

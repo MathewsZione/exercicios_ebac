@@ -9,7 +9,7 @@ Cenário: Login valido
 Dado que o cliente acesse a página de autentificação do portal ebac
 Quando o cliente digitar "matheus@gmail.com"
 E a senha "12345"
-Então deve ser direcionado para tela de Checkout
+Então deve exibir um mensagem "ola matheus"
 
 Cenário: Login invalido
 Dado que o cliente acesse a página de autentificação do portal ebac
@@ -17,10 +17,11 @@ Quando o cliente digitar "matheus@gmail.com"
 E a senha "1345"
 Então deve exibir uma mensagem de alerta “Usuário ou senha inválidos”
 
-Esquema do Cenário: autenticar multiplos usuarios
+Esquema do Cenário: autenticar o login do usuario
 Quando o cliente digitar o <usuário> 
 E a <senha>
-Então deve exibir a <mensagem> de Usuário ou senha inválidos
+Então deve exibir a <mensagem> 
 
 Exemplos: 
 |usuario|senha|mensagem|
+|"matheus@gmail.com"|"1234"|"ola matheus"|
